@@ -1,6 +1,5 @@
-package com.ote.user.security;
+package com.ote.user.security.permission;
 
-import com.ote.user.security.remoteprovider.RemoteUserRightProvider;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler;

@@ -28,6 +28,11 @@
     </dependencyManagement>
 
     <dependencies>
+     <!--   <dependency>
+            <groupId>com.ote.user</groupId>
+            <artifactId>user-interface</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+        </dependency>-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -67,6 +72,11 @@
             <artifactId>junit-platform-engine</artifactId>
             <version>1.0.1</version>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.ote.common</groupId>
+            <artifactId>crud-interface</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
 

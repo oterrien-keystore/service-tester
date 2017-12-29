@@ -1,4 +1,4 @@
-package com.ote.user.security.remoteprovider;
+package com.ote.user.security.permission;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -9,7 +9,7 @@ import org.springframework.web.util.UriComponentsBuilder;
 @Service
 public class RemoteUserRightProvider {
 
-    @Value("${application.name}")
+    @Value("${spring.application.name}")
     private String applicationName;
 
     @Value("${user-service.url}")

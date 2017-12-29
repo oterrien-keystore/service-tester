@@ -1,4 +1,4 @@
-package com.ote.user.security.remoteprovider;
+package com.ote.user.security.permission;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

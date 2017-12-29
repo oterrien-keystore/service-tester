@@ -1,6 +1,5 @@
-package com.ote.user.security;
+package com.ote.user.security.permission;
 
-import com.ote.user.security.remoteprovider.RemoteUserRightProvider;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.access.PermissionEvaluator;
 import org.springframework.security.core.Authentication;

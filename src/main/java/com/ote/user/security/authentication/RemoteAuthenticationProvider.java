@@ -1,5 +1,6 @@
-package com.ote.user.security.remoteprovider;
+package com.ote.user.security.authentication;
 
+import com.ote.user.checker.UserCredentialPayload;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.authentication.AuthenticationProvider;
