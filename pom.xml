@@ -28,11 +28,11 @@
     </dependencyManagement>
 
     <dependencies>
-     <!--   <dependency>
-            <groupId>com.ote.user</groupId>
-            <artifactId>user-interface</artifactId>
+     <dependency>
+            <groupId>com.ote.common</groupId>
+            <artifactId>crud-library</artifactId>
             <version>1.0.0-SNAPSHOT</version>
-        </dependency>-->
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
