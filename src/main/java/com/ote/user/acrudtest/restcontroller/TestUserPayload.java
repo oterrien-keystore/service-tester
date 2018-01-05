@@ -1,10 +1,12 @@
 package com.ote.user.acrudtest.restcontroller;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonInclude;
 import com.ote.crud.model.IPayload;
 import lombok.Data;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import org.hibernate.validator.constraints.NotEmpty;
 
 import javax.validation.constraints.NotNull;
 
@@ -17,10 +19,9 @@ public class TestUserPayload implements IPayload {
 
     private long id;
 
-    @NotNull(groups = {CreatingValidationType.class, ResettingValidationType.class})
+    @NotEmpty(groups = {CreatingValidationType.class, ResettingValidationType.class})
     private String login;
 
-    @NotNull(groups = {CreatingValidationType.class, ResettingValidationType.class})
-    @JsonIgnore
+    @NotEmpty(groups = {CreatingValidationType.class, ResettingValidationType.class})
     private String password;
 }
