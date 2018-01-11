@@ -1,9 +1,7 @@
 package com.ote.user.acrudtest.persistence;
 
 import com.ote.crud.IEntityRepository;
-import com.ote.crud.IMapperService;
 import com.ote.crud.IPersistenceService;
-import com.ote.crud.model.IEntity;
 import com.ote.user.acrudtest.restcontroller.TestUserPayload;
 import lombok.Getter;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,10 +14,6 @@ public class TestUserPersistenceService implements IPersistenceService<TestUserP
     @Autowired
     @Getter
     private IEntityRepository<TestUserEntity> entityRepository;
-
-    @Autowired
-    @Getter
-    private IMapperService<TestUserPayload, TestUserEntity> mapperService;
 
     @Getter
     private String entityName = TestUserPayload.getEntityName();

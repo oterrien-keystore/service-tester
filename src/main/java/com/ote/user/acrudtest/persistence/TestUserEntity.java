@@ -1,6 +1,7 @@
 package com.ote.user.acrudtest.persistence;
 
 import com.ote.crud.model.IEntity;
+import com.ote.user.acrudtest.restcontroller.TestUserPayload;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -21,4 +22,12 @@ public class TestUserEntity implements IEntity {
     @Column(name = "PASSWORD", nullable = false, length = 128)
     private String password;
 
+    @Override
+    public TestUserPayload convert() {
+        TestUserPayload payload = new TestUserPayload();
+        payload.setId(id);
+        payload.setLogin(login);
+        payload.setPassword(password);
+        return payload;
+    }
 }
