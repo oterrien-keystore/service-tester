@@ -1,7 +1,8 @@
 server.port: 7979
 
 spring:
-  application.name: TEST
+  application.name: TEST_SERVICE
+  profiles.active: default
   main.banner-mode: LOG
   datasource:
     url: jdbc:postgresql://localhost:5432/users

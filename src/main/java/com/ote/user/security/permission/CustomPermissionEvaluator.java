@@ -9,7 +9,9 @@ import java.io.Serializable;
 @RequiredArgsConstructor
 public class CustomPermissionEvaluator implements PermissionEvaluator {
 
-    private final RemoteUserRightProvider remoteUserRightProvider;
+    private final IUserRightProvider remoteUserRightProvider;
+
+    private final String applicationName;
 
     @Override
     public boolean hasPermission(Authentication auth, Object perimeter, Object permission) {
@@ -22,7 +24,7 @@ public class CustomPermissionEvaluator implements PermissionEvaluator {
     }
 
     private boolean hasPrivilege(Authentication auth, String perimeter, String permission) {
-        return remoteUserRightProvider.doesUserOwnPrivilegeForApplicationOnPerimeter(auth.getName(), perimeter, permission);
+        return remoteUserRightProvider.doesUserOwnPrivilegeForApplicationOnPerimeter(auth.getName(), applicationName, perimeter, permission);
     }
 
 }
