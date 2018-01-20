@@ -1,4 +1,4 @@
-package com.ote.user.controller;
+package com.ote.rights.controller;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
